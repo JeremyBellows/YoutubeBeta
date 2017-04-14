@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube Beta",
+    "version": "0.0.0.1",
+    "description": "Enables Youtube Beta",
+    "author": "Jeremy Bellows",
+    "permissions": [
+        "https://www.youtube.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["inject.js"]
+        }
+    ]
+}
